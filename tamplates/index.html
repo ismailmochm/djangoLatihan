@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'vendor/boostrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/boostrap/modif.css' %}">
+</head>
+
+<body style="background-image: url(http://www.datsuncarsandparts.com/data/archive/img/3870081952.png); 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+    <div class="container">
+        <h1 style="color: white;">{{heading}}</h1>
+        <p style="color: white;">Website Klasifikasi Perceraian</p>
+
+        <form>
+            <div class="form-group">
+                <label for="fname" style="color: white;">Usia Tergugat:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="lname" style="color: white;">Usia Penggugat:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+            <div class="form-group ">
+                <label for="fname" style="color: white;">Lama Nikah:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+            </div>
+            <div class="form-group ">
+                <label for="lname" style="color: white;">Jumlah Anak:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+            <div class="form-group ">
+                <label for="fname" style="color: white;">Indikator:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+            </div>
+            <div class="form-group ">
+                <label for="lname" style="color: white;">Mediasi:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+
+    </div>
+
+
+    <script src="{% static 'vendor/boostrap/bootstrap.js' %}"></script>
+    <script src="{% static 'vendor/boostrap/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/boostrap/popper.min.js' %}"></script>
+</body>
+
+</html>
